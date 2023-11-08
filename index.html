@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- <title>Bootstrap demo</title> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Guess the Number</title>
+</head>
+<body>
+    <section class="main" id="main">
+        <div class="upper-section">
+            <div>
+                <button onclick="resetAll()">Again!</button>
+                <span> &lt; Between 1 - 20 &gt;
+                </span>
+            </div>
+            <h1 class="heading">
+                Guess My Number
+            </h1>
+            <div class="symbol-div">
+                <span class="symbol">?</span>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="row input-div">
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center h-100">
+                <input type="number" id="user-input">
+                <button class="mt-4 px-3 py-1 fs-4" id="check-btn" onclick="CheckNumber()">Check!</button>
+            </div>
+            <div class="col-md-6 d-flex flex-column align-items-center">
+                <p class="text" id="remarks">
+                    Start guessing...
+                </p>
+                <div class="mt-4">
+                    <p class="text">Score: <span id="score"></span> </p>
+                    <p class="text">Highscore: <span id="highscore"></span> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
